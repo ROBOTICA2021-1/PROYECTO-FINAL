@@ -12,7 +12,7 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<div class="banner"></div>
+	<div class="banner"> ROBÓTICA <span style="color: #ff0000"> [</span>2021<span style="color: #ff0000">-</span>1<span style="color: #ff0000">]</span></div>
 	<div class="cloud1"></div>
 	<div class="cloud2"></div>
 	<div class="cloud3"></div>
@@ -34,55 +34,227 @@
 			<li class="tab1"><a href="#tab1">PRESENTACIÓN DEL PROYECTO ASIGNADO</a></li>
 			<li class="tab2"><a href="#tab2">SELECCIÓN DE ROBOTS Y HERRAMIENTAS</a></li>
 			<li class="tab3"><a href="#tab3">DISEÑO DE LA CELDA Y SOLUCIÓN PROPUESTA</a></li>
-			<li class="tab4"><a href="#tab1">ARCHIVOS ENTREGABLES Y MODELOS CAD</a></li>
-			<li class="tab5"><a href="#tab2">INTEGRANTES DEL EQUIPO Y PROFESORES</a></li>
+			<li class="tab4"><a href="#tab4">ARCHIVOS ENTREGABLES Y MODELOS CAD</a></li>
+			<li class="tab5"><a href="#tab5">INTEGRANTES DEL EQUIPO Y PROFESORES</a></li>
 		</ul>
 		<div class="secciones">
 <!-- ******************************************************************************** -->
 			<article id="tab1">
-  					<div class="manual">
-					<div class="manualSearch">
-  						<legend>MANUAL</legend>
-						<p>Completa los siguientes datos</p>
+  					<div class="section1">
+					<div class="sectionText1">
+  						<legend>INTRODUCCIÓN Y OBJETIVOS DEL PROYECTO</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
+						del software ABB ROBOTSTUDIO para la programación y simulación de una celda robótica 
+						integrando los conceptos trabajados en clase de laboratorio y aplicando las herramientas
+                                                de software con el objetivo de automatizar el proceso industrial asignado a cada equipo de trabajo.
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> OBJETIVOS </span>
 						<br><br>
-						<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAerXhd-zZn_w9QCcEFbZq93jK63ilNST1dWr_FSMgYjnL3HOBZCpa5_ToiYKaDRqdq1HtGjrjHXln/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="600" scrolling="no" frameborder="0"></iframe>
+						<span style="color: #000000">• </span> Aplicar de forma práctica los conceptos sobre manipuladores seriales adquiridos durante el curso de robótica.
+						<br>						
+						<span style="color: #000000">• </span> Utilizar Robot Studio como herramienta para el control y diseño de procesos con robots industriales.
+						<br>
+						<span style="color: #000000">• </span> Diseño de rutinas y trayectorias necesarias para la realización de un proyecto de soldadura industrial.
+						<br>
+						<span style="color: #000000">• </span> Integración de mecanismos, componentes inteligentes y otros elementos de celda en aplicaciones robóticas industriales.
+						<br>
+						<span style="color: #000000">• </span> Manejo de interfaces de usuario para el control y supervisión de procesos industriales.
+						<br>
+						</p>
+						<br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> DESCRIPCIÓN DEL PROYECTO </span>
+						<br><br>
+						En los proyectos E1 y E2, se van a empacar vajillas de loza o plásticas, no desechables, en cajas de cartón, para su posterior distribución. 
+						La celda tiene tres o cuatros bandas de alimentación de platos y pocillos y una de cajas de cartón, un robot toma los platos y pocillos y los 
+						coloca en sus puestos dentro de la caja. Completada la vajilla, otro robot toma las cajas y las va paletizando en una estiva. Diseñar la caja 
+						y su interior.
+						<span style= "font-weight: BOLD"> Proyecto E1: Vajilla de 4 puestos: plato hondo, plato pando, plato de postre, platillo y pocillo para café. </span>
+						<br>
+						</p>
 					</div>	
-				</form>
 			</article>
 <!-- ******************************************************************************** -->
 			<article id="tab2">
-				<h1>BUGS</h1>
-				<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmziC0V-OwB2lTeti0RJPXK_YcG50AvYIkbBIuf7oBzsNZWICcAMqn2qbF_1U6PIvJFLsECqTEy5AG/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="600" scrolling="no" frameborder="0"></iframe>
+  					<div class="section2">
+					<div class="sectionText2">
+  						<legend>SELECCIÓN DE ROBOTS Y HERRAMIENTAS</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> El proyecto final de la asignatura tiene como propósito general hacer uso
+						del software ABB ROBOTSTUDIO para la programación y simulación de una celda robótica 
+						integrando los conceptos trabajados en clase de laboratorio y aplicando las herramientas
+                                                de software con el objetivo de automatizar el proceso industrial asignado a cada equipo de trabajo.
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> SELECCIÓN DEL ROBOT (MARCA Y REFERENCIA)</span>
+						<br><br>
+						La tarea de diseño y simulación de la celda se realizará por medio del entorno de RobotStudio de ABB, el cuál incluye en sus bibliotecas
+						predeterminadas los modelos de una amplia gamma de robots industriales, razón por
+						la cuál partimos de elegir a ABB como nuestro proveedor, la cual a su vez es una empresa especializada 
+						con una basta experiencia en el campo de la robótica, automatización, equipamientos industriales y otras tecnologías de ingeniería.
+						<br><br>
+						Considerando la alta oferta en robots industriales que brinda este proveedor, ABB dispone de una herramienta de selección denominada <span style="color: #ffffff"> Robot selector </span> 
+						desde su página web (o ingresando <a href="https://new.abb.com/products/robotics/industrial-robots/robot-selector">aquí</a>) la cuál permite filtrar 
+						los diferentes modelos empleando como principales criterios de selección: la aplicación, la carga útil y el alcance máximo. 												
+						</p>
+						<br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> SELECCIÓN DE LA HERRAMIENTA </span>
+						<br><br>
+						En los proyectos E1 y E2, se van a empacar vajillas de loza o plásticas, no desechables, en cajas de cartón, para su posterior distribución. 
+						La celda tiene tres o cuatros bandas de alimentación de platos y pocillos y una de cajas de cartón, un robot toma los platos y pocillos y los 
+						coloca en sus puestos dentro de la caja. Completada la vajilla, otro robot toma las cajas y las va paletizando en una estiva. Diseñar la caja 
+						y su interior.
+						<span style= "font-weight: BOLD"> Proyecto E1: Vajilla de 4 puestos: plato hondo, plato pando, plato de postre, platillo y pocillo para café. </span>
+						<br>
+						</p>
 			</article>
 <!-- ******************************************************************************** -->
 			<article id="tab3">
-                                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRhyDDFOHx6psHkgO0vRFSnCqr27SJkm57VA9eOSZwfRLEGlDUxccaV9_VnQaoxc5-2dPoq3cc2t6Fb/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false "width="1000" height="600" scrolling="no" frameborder="0"></iframe>
-				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfkC-CnBbb7JE2oLn07oUoAep87DUzKPF-SrY6UN8icTZ2cug/formResponse" target="_self" method="POST">
-					<div class="contacto">
-					<div class="contactoForm">
-  						<legend>CONTACTO</legend>
-						<p>Completa los siguientes datos antes de derivar:</p>
+  					<div class="section3">
+					<div class="sectionText3">
+  						<legend>TRES</legend>
+						<p>Completa los siguientes datos</p>
+						<br><br>
+					<p> HOLA MUNDO </p>
+					<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAerXhd-zZn_w9QCcEFbZq93jK63ilNST1dWr_FSMgYjnL3HOBZCpa5_ToiYKaDRqdq1HtGjrjHXln/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600" scrolling="no" frameborder="0"></iframe>
+					</div>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab4">
+  					<div class="section4">
+					<div class="sectionText4">
+  						<legend>ENTREGABLES CAD Y ROBOTSTUDIO</legend>
 						<br>
+						<p><span style="color: #ffffff"> En ésta sección se incluyen los enlaces de descarga para todos los archivos generados en el desarrollo de la celda
+						robótica conforme se solicitan entre los entregables requeridos en el enunciado del proyecto final. Los enlaces presentados correspondes a los archivos cargados 
+						en el repositorio de GitHub, el cuál también es accesible ingresando  <a href="https://github.com/ROBOTICA2021-1/PROYECTO-FINAL">aquí</a>.
+
+						</span></p>
+						<br><br><br>
+
+						<p><span style= "font-weight: BOLD">PACK AND GO</span>
+						<form action="https://google.com">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br>
+						<p>Para poder compartir la celda completa junto con todos los archivos dependientes del proyecto, se crea un paquete de la estación
+						activa que incluye los controladores virtuales, las bibliotecas y demás medios adicionales en un único archivo Pack and Go, en formato.RSPAG. 
+						Esta caracterítica de RobotStudio® permite empaquetar el proyecto para compartirlo con otras personas sin omitir ningún posible archivo 
+						necesario para su correcta ejecución.</p>
 						<br>
-						<fieldset>
-							<legend align="center">¿Te es útil la herramienta?</legend>
-							<input type="radio" class="radioB" name="entry.1204117259" value="Sí"> Sí &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" class="radioB" name="entry.1204117259" value="No"> No	 <br><br>		
-						</fieldset>
-						<fieldset>
-							<legend align="center">¿Con qué frecuencia la utilizas?</legend>
-							<input type="radio" class="radioB" name="entry.656839720" value="A diario"> A diario <br>
-							<input type="radio" class="radioB" name="entry.656839720" value="Una vez a la semana"> Una vez a la semana <br>
-							<input type="radio" class="radioB" name="entry.656839720" value="Una vez al mes"> Una vez al mes <br>
-							<br>			
-						</fieldset>
+						<p>Insertar imágen de la celda en RS</p>
 						<br>
-						<textarea id="comment" name="entry.2115571736" size="50" placeholder="¿Qué proceso crees que le haga falta?" autocomplete="off" required></textarea>
-						<button type="submit" class="buttonSend" id="btnSend">ENVIAR</button>
-						<button type="reset" class="buttonClean" id="btnClean">BORRAR</button>
-						</div>
-					</div>	
-				</form>
+
+						<p><span style= "font-weight: BOLD">BIBLIOTECAS DE ROBOTSTUDIO</span>
+						<form action="https://google.com">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br> 
+						<p>Para los elementos que componen la celda de trabajo, se utilizaron múltiples modelos CAD de uso gratuito disponibles en 
+						diferentes repositorios web y en formato compatible para su edición desde Autodesk Inventor®. Estos diseños se modificaron 
+						acorde a los requerimientos de nuestro proyecto y se guardaron en un formato .SAT para ser importados como geometría desde 
+						RobotStudio®. Finalmente, se guardaron como biblioteca en formato .RSLIB para su posterior uso en la contrucción de la celda
+                                                robótica.</p>
+						<br>
+						<p>Insertar imágen de las bibliotecas en RS</p>
+						<br>
+
+						<p><span style= "font-weight: BOLD">ARCHIVOS DE PROGRAMA RAPID</span>
+						<form action="https://google.com">
+							<button class="Download">DESCARGAR</button><br>
+						</form></p><br> 
+						<p>Para el código generado por medio de RAPID en entorno de RobotStudio®...</p>
+						<br>
+						<p>Insertar imágen de RAPID en RS</p>
+						<br>
+					</div>
+			</article>
+<!-- ******************************************************************************** -->
+			<article id="tab5">
+  					<div class="section5">
+					<div class="sectionText5">
+  						<legend>EQUIPO DE TRABAJO Y PROFESORES</legend>
+						<br>
+						<p>
+						<span style="color: #ffffff"> El trabajo presentado corresponde al proyecto final para la asignatura de <span style= "font-weight: BOLD">Robótica</span> 
+						a cargo del Departamento de Ingeniería Mecánica y Mecatrónica de la Universidad Nacional de Colombia para el primer semestre del año 2021.
+						El equipo de trabajo se encuentra conformado por tres estudiantes del pregrado de ingeniería mecatrónica. 
+						</span></p>
+						<br><br><br><br>
+						<p> 
+						<span style= "font-weight: BOLD"> INTEGRANTES DEL EQUIPO</span>
+						<br><br>
+						<table>
+  						<tr>
+  						<td>
+						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
+							<button class="buttonLink1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jspanchee </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; John Sebastian Panche Estupiñán <br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Correo: jspanchee@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+  						<td>
+						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
+							<button class="buttonLink2">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jspanchee </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; John Sebastian Panche Estupiñán <br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Correo: jspanchee@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+  						<td>
+						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
+							<button class="buttonLink3">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: BLUE"> jspanchee </span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp; John Sebastian Panche Estupiñán <br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Correo: jspanchee@unal.edu.co <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica
+							</button><br>
+						</form></p><br></td>
+						</tr>
+						</table>
+						<br><br>
+
+						<table>
+  						<tr>
+  						<td>
+						<form action="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000221996">
+							<fieldset>
+ 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>
+							<button class="buttonLink4">
+							&nbsp;&nbsp;&nbsp;&nbsp;Pedro Fabián Cárdenas Herrera <br>
+							&nbsp;&nbsp;&nbsp;&nbsp; Correo: pfcardenash@unal.edu.co <br>		
+							&nbsp;&nbsp;&nbsp;&nbsp;Estudiante de Ingeniería Mecatrónica <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Área de actuación: Robótica Industrial serial<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;y paralela, Manipuladores móviles, Realidad <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;virtual y Motion Planning, Sistemas mecatrónicos.
+							</button><br>
+							</fieldset>
+						</form></td>
+    						<td>
+						<form action="https://www.linkedin.com/in/john-sebastian-panche-estupi%C3%B1%C3%A1n-1647ba1b2/">
+							<fieldset>
+ 							<legend>&nbsp;&nbsp;&nbsp;&nbsp;PROFESOR</legend>				
+							<button class="buttonLink5">
+							Ricardo Emiro Ramírez Heredia&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							Correo: reramirezh@unal.edu.co&nbsp;&nbsp;&nbsp;&nbsp; <br>		
+							Estudiante de Ingeniería Mecatrónica&nbsp;&nbsp;&nbsp;&nbsp; <br>
+							Área de actuación: Robótica industrial, <br>
+							robótica móvil, automatización industrial, <br> 
+							diseño de máquinas.
+							</button><br>
+							</fieldset>
+						</form></td>  
+						</tr>
+						</table>				
+					</div>
 			</article>
 <!-- ******************************************************************************** -->
 		</div>
