@@ -19,7 +19,8 @@ html {
 }
 
 body{
-	background: url('tm.png'), url('banner.jpg') top no-repeat BLACK
+	background: url('tm.png'), url('banner.jpg') top no-repeat BLACK;
+   	cursor: url('cursor.png'),grab;
 }
 /**********************************************************/
 
