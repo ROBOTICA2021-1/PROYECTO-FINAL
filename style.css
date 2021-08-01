@@ -39,6 +39,13 @@ body{
 	padding: 5px 0px 0px 200px;
 	text-decoration: none
 }
+.title{		
+	font: bold 45px 'Lato', sans-serif;
+	color:  WHITE;
+	text-align: left;
+	padding: 0px 0px 0px 30px;
+	text-decoration: underline dotted red;
+}
 
 /*********************************************/
 
