@@ -20,7 +20,7 @@ html {
 
 body{
 	background: url('tm.png'), url('banner.png') top no-repeat BLACK;
-   	cursor: url('cursor.png'),grab;
+   	cursor: url('cursor.png'),auto;
 }
 /**********************************************************/
 
@@ -485,6 +485,7 @@ ul.tabs li a{
 	border: 4px inset rgba(255,255,255,1);
 	border-radius: 1%;
 	font: bold 12px 'Lato', sans-serif;
+        text-shadow: 2px 2px 15px WHITE;
 	text-align: left;
 	color: BLACK;
         background-image: url("pfcardenash.jpg");
@@ -494,14 +495,16 @@ ul.tabs li a{
 	border: 4px inset rgba(255,255,255,1);
 	border-radius: 1%;
 	font: bold 12px 'Lato', sans-serif;
+        text-shadow: 2px 2px 15px WHITE;
 	text-align: right;
 	color: BLACK;
         background-image: url("reramirezh.jpg");
+
 }
 .section5 button:hover{
 	border: 4px inset rgba(0,147,212,1);
 }
 .section5 button:active{
 	border: 4px inset rgba(90,196,241,1);
-	color: rgba(90,196,241,0.80);
+	color: rgba(255,255,255,1);
 }
