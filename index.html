@@ -82,8 +82,10 @@
   						<legend>SELECCIÓN DE ROBOTS Y HERRAMIENTAS</legend>
 						<br>
 						<p>
-						<span style="color: #ffffff"> Con base en el enunciado del proyecto, se requiere implementar como mínimo de dos robots manipuladores 
-						para la ejecución de las tareas de automatización del proceso asignado. 
+						<span style="color: #ffffff"> Con base en el enunciado del proyecto, se requiere implementar dos robots manipuladores 
+						como mínimo para la ejecución de las tareas de automatización del proceso asignado. En ésta sección se presentan los 
+						criterios de selección empleados para elegir los robots trabajados en el proyecto, además de hacer un análisis de las herramientas
+						seleccionadas para cada tarea.
 						</span></p>
 						<br><br><br><br>
 						<p> 
@@ -102,7 +104,7 @@
 						<p><img src="ABBRobotSelector.PNG"></p>
 						<br>
 						<table class="RobotSelector"><tr>
-						<td style="width:25%;"><img src="ABB.png" width="200"></td>
+						<td style="width:25%;"><img src="ABB.png" width="200"  style="border:none;"></td>
 						<td style="width:45%;">Arc welding, Assembly, Cleaning, Coating, Collaboration, Cutting, Deburring, Depalletizing, Die casting, Dispensing, Enamelling, Full layer palletizing, Glazing, Gluing, Grinding, 
 						Heavy arc welding, Injection moulding, Insertion, Item picking, Kitting, Loading, Loading and unloading, Machine tending, Material handling, Measuring, Packing, Painting, Palletizing, 
 						Parts inspection, Picking, Polishing, Powdering, Powertrain assembly, Premachining, Press automation, Press brake tending, Press tending, Rubber insertion, Screw driving, Screwdriving, 
@@ -121,25 +123,44 @@
 						</td>
 						</tr></table>
 						<br><br>
-						<p> 
-						<span style= "font-weight: BOLD"> 1ER ROBOT. </span> Para la primer tarea, el robot debe tomar cada una de las 20 piezas que conforman la 
+						<p><span style= "font-weight: BOLD"> 1ER ROBOT. </span> Para la primer tarea, el robot debe tomar cada una de las 20 piezas que conforman la 
 						vajilla de 4 puestos desde unas bandas de alimentación y colocarlas en orden dentro de la caja de cartón. Encontramos varias aplicaciones
 						que engloban esta acción, como lo son Material handling o Packing, por tanto buscamos una referencia de propósito general. Respecto a la 
 						carga útil, el robot sólo manipulará una pieza a la vez, y la pieza de vajilla más pesada no alcanza ni 1 kilogramo de peso, por lo cual
 						considerando un peso promedio de la herramienta la opción más adecuada es "up to 7(kg)". Finalmente, para el alcance del robot, dado que 
 						se requiere alcanzar la piezas desde la respectiva banda para su posterior embalaje, se eligen entre las opciones disponibles al robot de
-						mayor alcance, el cual corresponde al IRB 1600.  
-						<br><br>				
-						<p> 
-						<span style= "font-weight: BOLD"> SELECCIÓN DE LA HERRAMIENTA </span>
+						mayor alcance, el cual corresponde al IRB 1600.</p>
 						<br><br>
-						En los proyectos E1 y E2, se van a empacar vajillas de loza o plásticas, no desechables, en cajas de cartón, para su posterior distribución. 
-						La celda tiene tres o cuatros bandas de alimentación de platos y pocillos y una de cajas de cartón, un robot toma los platos y pocillos y los 
-						coloca en sus puestos dentro de la caja. Completada la vajilla, otro robot toma las cajas y las va paletizando en una estiva. Diseñar la caja 
-						y su interior.
-						<span style= "font-weight: BOLD"> Proyecto E1: Vajilla de 4 puestos: plato hondo, plato pando, plato de postre, platillo y pocillo para café. </span>
+
+						<br><br>
+						<p><span style= "font-weight: BOLD"> 2DO ROBOT. </span> Para la segunda tarea, el robot debe tomar una a una las cajas de cartón desde la
+						banda de salida y realizar el proceso de palletizado sobre una estiva de madera. La aplicación del robot para este caso será de Palletizing.
+ 						Para determinar la carga útil, se debe tener en cuenta que el robot manipulará una caja a la vez, cada una con las 20 piezas de vajilla 
+						debidamente embaladas en la tarea anterior, y considerando un peso estimado por cada caja no mayor de 10kg siendo conservadores, razón 
+						por la cual y considerando un peso promedio de la herramienta la opción elegida es "7-16 (kg)". Con éstos filtros limitamos la selección
+						a dos opciones, donde la primera que corresponde al IRB 2600 tiene una carga útil de entre 12-20 kg. Finalmente, para el alcance del robot, 
+						se requiere que el espacio de trabajo contenga la estiba para el posicionamiento de las cajas, por lo cuál se considera que el alcance de  	
+						1.65-1.85 m del IRB 2600 es suficiente para esta tarea.</p>
+						<br><br>				
+						<p><span style= "font-weight: BOLD"> SELECCIÓN DE LAS HERRAMIENTAS </span>
+						<br><br>
+						La selección del tipo de herramienta se consideró partiendo de una búsqueda preliminar de máquinas empleadas en este tipo de industria y 
+						considerando las propiedades físicas de la pieza de trabajo a manipular. Para la primer tarea, se estableció que los platos y pocillos serían 
+						de loza o porcelana, un material recubierto e impermeabilizado con poca adhesión, y la geometría convencional de la vajilla dificulta su manipulación 
+						con un gripper de pinza convencional al no poder garantizar la posición tras el agarre. Bajo estas mismas razones, se decidió emplear una gripper de
+						vacío, dado que la superficie lisa en el centro de los platos y al interior del pocillo facilitan el agarre por succión desde una sola cara de la pieza. 
+						Para la segunda tarea, considerando el ejemplo realizado en clase de laboratorio y haciendo una búsqueda general, encontramos que estas mismas 
+						herramientas de vacío son bastante utilizadas para las aplicaciones de palletizado, y las características de la herramienta como en general el tamaño y
+						la cantidad de copas de succión aumentarán dependiendo del peso de la carga a manipular.
+						<br>
+						Con esta selección de herramientas, se procedió a realizar una búsqueda de fabricantes y referencias para tener una pespectiva más amplia de estas 
+						herramientas, y partimos de los diseños CAD de la línea de grippers de vacio disponibles por parte del proovedor ROBOTIQ, sin embargo, algunas 
+						características se modificaron para poder adaptarlas a la tarea en cuestión y modelar la herramienta para su simulación en el entorno RobotStudio®.
 						<br>
 						</p>
+						<p><span style= "font-weight: BOLD"> GRIPPERS DE VACÍO [ROBOTIQ]</span></p><br>
+						<p><img src="gripperx1.PNG"></p><br>
+						<p><img src="gripperx4.PNG"></p><br>
 					</div></div>
 			</article>
 <!-- ******************************************************************************** -->
@@ -188,7 +209,7 @@
 						Esta caracterítica de RobotStudio® permite empaquetar el proyecto para compartirlo con otras personas sin omitir ningún posible archivo 
 						necesario para su correcta ejecución.</p>
 						<br>
-						<p><img src="EntregablesRS1.PNG" width="990"></p>
+						<p><img src="EntregablesRS1.PNG" width="970"></p>
 						<br><hr><br>
 
 						<p><span style= "font-weight: BOLD">BIBLIOTECAS DE ROBOTSTUDIO</span>
@@ -201,7 +222,7 @@
 						RobotStudio®. Finalmente, se guardaron como biblioteca en formato .RSLIB para su posterior uso en la contrucción de la celda
                                                 robótica.</p>
 						<br>
-						<p><img src="EntregablesRS2.png" width="990"></p>
+						<p><img src="EntregablesRS2.png" width="970"></p>
 						<br><hr><br>
 
 						<p><span style= "font-weight: BOLD">ARCHIVOS DE PROGRAMA RAPID</span>
