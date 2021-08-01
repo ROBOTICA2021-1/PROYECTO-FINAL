@@ -460,7 +460,10 @@ ul.tabs li a{
 	font: bold 12px 'Lato', sans-serif;
   	text-align: left;
 	color: BLACK;
-        background-image: url("jspanchee.png");
+        background-image: url("jspanchee.jpg");
+	background-repeat: no-repeat;
+ 	background-color: #cccccc;
+ 	background-position: right;
 }
 .section5 button.buttonLink2{
 	width:300px; height:120px;
