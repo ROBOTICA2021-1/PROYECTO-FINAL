@@ -42,9 +42,10 @@ body{
 .title{		
 	font: bold 45px 'Lato', sans-serif;
 	color:  WHITE;
+	background-color: rgba(64,64,64, 0.5);
 	text-align: left;
 	padding: 0px 0px 0px 30px;
-	text-decoration: underline dotted red;
+    	text-shadow: 0px 0px 30px BLACK;
 }
 
 /*********************************************/
