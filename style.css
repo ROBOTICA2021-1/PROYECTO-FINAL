@@ -302,6 +302,14 @@ ul.tabs li a{
 	font: 16px 'Arial', sans-serif;
    	color: BLACK;
 }
+
+.sectionText2 table.RobotSelector {
+  	margin-left: auto;
+  	margin-right: auto;
+  	border: 2px solid NAVY;
+  	width: 96%;
+	text-align: center;
+}
 /**********************************************************/
 
 .section3 {
