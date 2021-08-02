@@ -131,7 +131,7 @@ ul.tabs li.tab1{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: SEAGREEN url('tab1.png') center no-repeat;   
+    	background: SEAGREEN url('tab1.PNG') center no-repeat;   
 	box-shadow: inset 0 0 0 50vw rgba(36,70,35,0.7);	
 	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
@@ -155,7 +155,7 @@ ul.tabs li.tab3{
         list-style-type: none;
         text-align: center;
         margin: 0px 0px 0px 0px;
-    	background: DARKRED url('tab3.png') center no-repeat;   
+    	background: DARKRED url('tab3.PNG') center no-repeat;   
 	box-shadow: inset 0 0 0 50vw rgba(131,22,11,0.7);
     	border-top-left-radius: 15px;
     	border-bottom-left-radius: 15px;
