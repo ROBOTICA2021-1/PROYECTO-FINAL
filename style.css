@@ -357,6 +357,10 @@ ul.tabs li a{
 	font: 16px 'Arial', sans-serif;
    	color: BLACK;
 }
+.sectionText3 img {
+	border: 2px solid rgba(131,22,11,0.95);
+	padding: 5px 5px 5px 5px;
+}
 .sectionText3 iframe {
 	border: 2px solid rgba(131,22,11,0.95);
 	padding: 5px 5px 5px 5px;
